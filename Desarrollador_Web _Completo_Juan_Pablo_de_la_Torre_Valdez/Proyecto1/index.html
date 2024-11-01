@@ -19,12 +19,11 @@
     </header>
     <!-- MENU DE NAVEGACIÓN -->
     <div class="nav-big">
-    <nav class="navegacion-principal contenedor">
-        <a href="index.html">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+        <nav class="navegacion-principal contenedor" id="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </div>
     <!-- CONTENIDO CABECERA-->
     <section class="hero">
@@ -36,12 +35,12 @@
                     <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
             </svg>
             <p>Vigo, España</p>
-            <a href="Contacto.html" class="boton">Contactar</a>
+            <a href="#contacto" class="boton">Contactar</a>
         </div>
     </section>
     <!-- CONTENIDO PÁGINA-->
     <main class="contenedor sombra">
-        <h2>Mis Servicios</h2>
+        <h2  id="servicios">Mis Servicios</h2>
         <div class="contenedor-servicios"> 
             <section class="servicio">
                 <h3>Diseño Web</h3>
@@ -56,7 +55,7 @@
                 </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
-            <section class="servicio">
+            <section class="servicio" >
                 <h3>Aplicaciones Móviles</h3>
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -95,7 +94,7 @@
             </section>
         </div>  <!-- .servicios -->
     
-        <section class="servicio">
+        <section class="servicio" id="contacto">
             <h2>Contacto</h2>
             <form class="formulario">
                 <fieldset>

@@ -171,13 +171,6 @@
 
 /* SERVICIOS */
 
-    .servicio,
-    .navegacion-principal,
-    .formulario {
-        scroll-snap-align:center;
-        scroll-snap-stop: always;
-    }
-
     @media (min-width: 768px) {
         .contenedor-servicios {
             display: grid;
