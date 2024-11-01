@@ -13,3 +13,4 @@ Este es uno de mis primeros proyectos en HTML y CSS, desarrollado como parte del
 - Diseño adaptable para cualquier freelancer que necesite una web de presentación.
 
 [Visualizar la página aquí](https://mellow-pithivier-11e472.netlify.app/)
+[Visualizar la página aquí](https://mellow-pithivier-11e472.netlify.app/) _(abrir en una nueva pestaña)_
