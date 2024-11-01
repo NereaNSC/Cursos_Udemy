@@ -12,4 +12,4 @@ Este es uno de mis primeros proyectos en HTML y CSS, desarrollado como parte del
 - Estructura organizada que permite una navegación fácil e intuitiva.
 - Diseño adaptable para cualquier freelancer que necesite una web de presentación.
 
-  <a href="https://mellow-pithivier-11e472.netlify.app/" target="_blank">Visualizar web freelance</a>
+<a href="https://mellow-pithivier-11e472.netlify.app/" target="_blank">Visualizar web freelance</a>
