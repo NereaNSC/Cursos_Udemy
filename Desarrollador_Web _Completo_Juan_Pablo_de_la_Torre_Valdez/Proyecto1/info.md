@@ -15,4 +15,4 @@ Este es uno de mis primeros proyectos en HTML y CSS, desarrollado como parte del
 [Visualizar la página aquí](https://mellow-pithivier-11e472.netlify.app/)
 
 - SIGUIENTE
-  <a href="https://mellow-pithivier-11e472.netlify.app/" target="_blank">Visualizar la página aquí</a>
+  <a href="https://mellow-pithivier-11e472.netlify.app/" target="_blank">Visualizar web freelance</a>
