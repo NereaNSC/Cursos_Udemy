@@ -1,0 +1,293 @@
+:root {      /**definicion de los valores de la paleta**/
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario:#0097A7; 
+    --gris: #757575; 
+    --grisClaro: #DFE9F3;
+}
+
+/* GLOBAL */
+    html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+        scroll-snap-type: y mandatory;
+        }
+
+    *, *::before, *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        font-size: 16px;   /**1 rem= 10 px**/
+        font-family: 'Krub', sans-serif;
+        background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+    }
+
+    .contenedor {
+        max-width: 120rem;
+        margin:0 auto 0 auto;  /**arriba - dch - abajo - izq.**/
+    }
+
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: 1rem 3rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        width: 90%;
+        text-align: center;
+        border: none;
+    }
+
+    @media (min-width: 768px) {
+        .boton {
+            width: auto;
+        }
+    }
+
+    .boton:hover {
+        cursor: pointer;
+    }
+
+    
+
+    .sombra {
+        -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.53);
+        -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.53);
+        box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.53);
+        background-color: var(--blanco);
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+   
+
+/* TIPOGRAFIA */
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    .titulo span {
+        font-size: 2rem;
+        }
+
+/* UTILIDADES */
+    .w-100 {
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .w-100 {
+            width: auto;
+        }
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .aling-drch {
+        justify-content: flex-end;
+    }
+
+
+
+/* NAVEGACIÓN PRINCIPAL */
+    .nav-big {
+        background-color: var(--secundario);
+    }
+
+    .navegacion-principal {
+        display: flex;
+        justify-content: space-between; /*El primero y el ultimo se distribuyen en las esquinas y el resto se justifica*/
+    }
+    .navegacion-principal a {
+        padding: 1rem;
+        color: var(--blanco);
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    @media (max-width: 480px) {
+        .navegacion-principal {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .navegacion-principal a:hover {
+        background-color: var(--primario);
+        color: var(--oscuro)
+    }
+
+    .navegacion-principal a:visited {
+        color: var(--blanco);
+    }
+
+/* CONTENIDO CABECERA*/
+    .hero {
+        background-image: url(../img/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .contenido-hero {
+        position: absolute;
+        background-color: rgb(0 0 0 / 60%);
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenido-hero h2 ,
+    .contenido-hero p {
+        color: var(--blanco);
+    }
+
+/* SERVICIOS */
+
+    .servicio,
+    .navegacion-principal,
+    .formulario {
+        scroll-snap-align:center;
+        scroll-snap-stop: always;
+    }
+
+    @media (min-width: 768px) {
+        .contenedor-servicios {
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;   /* es lo mismo que 1fr 1fr 1fr  o lo que es lo mismo repeat(3, 1fr) */
+            grid-template-rows: 100%;
+            column-gap: 1rem;   /* SEPARACION ENTRE COLUMNAS */
+
+        }
+    }
+
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio h3 {
+        color: var(--secundario);
+        font-weight: bold;
+    }
+
+    .servicio p {
+        line-height:2;
+        text-align: center;
+    }
+
+    .servicio .iconos {
+        height: 15rem;
+        width: 15rem;
+        background-color: var(--primario);
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* CONTACTO */
+    .formulario {
+        background-color: var(--gris);
+        width: min(60rem, 100%);   /*UTILIZARA LOS VALORES MAS PEQUEÑOS*/
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    .formulario fieldset{
+        border: none;
+    }
+
+    .formulario legend {
+        text-align: center;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: var(--primario);
+    }
+
+    @media (min-width:768px) {
+        .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+        }
+
+        .campos:nth-child(3), 
+        .campos:nth-child(4) {
+            grid-column: 1 / 3;
+        }
+    } 
+
+    .campos {
+        margin-bottom: 1rem;
+     }
+
+    .campos label {
+        color: var(--blanco);
+        font-weight: bold;
+        margin-bottom: .5rem;
+        display: block;
+    }
+
+    .campos textarea {
+        height: 20rem;
+    }
+
+    .input-text {
+        width: 100%;
+        border: none;
+        padding: 1.5rem;
+        border-radius: .5rem;
+    }
+
+    .enviar .boton {
+        width: 90%;
+    }
+    
+
+    /* FOOTER */
+
+    .footer {
+        text-align: center;
+    }
+    
+/* MEDIA QUERY */    /* TAMAÑOS ESTANDAR 480px   768px   */
+/*SOLO SE PROGRAMA AQUELLO QUE VAMOS A MODIFICAR EN LAS DISTINTAS VERSIONES
+        - MOVIL             480px
+        - TABLET            768px
+        - MONITOR          1140px
+        - MONITOR GRANDE   1400px 
+        
+        */
