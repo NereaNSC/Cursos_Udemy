@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="logotipo"/>
+        </a>
+    </header>
+    
+
+    <!-- MENÚ -->
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL-->
+     <main class="contenedor">
+        <h1 class="contenidoPrincipal__titulo">React JS</h1>
+
+        <div id="producto1" class="presentacionProducto">
+            <img class="presentacionProducto__imagen" src="img/1.jpg" alt="Imagen del producto">
+            <div class="presentacionProducto__contenido">
+                <p class="producto__nombre">VueJS</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur congue molestie sem sit amet vehicula. </p>
+                <p class="producto__precio">25€</p>
+                <form class="formularioTienda">
+                    <select class="formularioTienda__campo">
+                        <option disabled selected>- Seleccionar talla-</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <input class="formularioTienda__campo" type="number" placeholder="cantidad" min="1"/>
+                    <input class="formularioTienda__submit" type="submit" value="Comprar">
+                </form>
+            </div>
+        </div> <!-- producto1-->
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer__texto">Todos los derechos Reservador 2024 - <a class="footer__texto__enlace" href="https://github.com/NereaNSC" target="_blank"> Nerea Santos </a></p>
+    </footer>
+
+</body>
+</html>
