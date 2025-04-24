@@ -1,6 +1,6 @@
 # Proyecto 2 - Web de Una Pequeña Tienda
 
-Este proyecto es parte de mis primeros pasos en el desarrollo web con HTML y CSS, realizado como parte del curso \*\*[Desarrollo Web Completo](https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/?couponCode=ST6MT103124) de Juan Pablo de la Torre Valdez en Udemy. El objetivo de este proyecto es crear una página para una pequeña tienda, con un diseño minimalista y fácil de navegar.
+Este proyecto es parte de mis primeros pasos en el desarrollo web con HTML y CSS, realizado como parte del curso [**Desarrollo Web Completo**](https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/?couponCode=ST6MT103124) de Juan Pablo de la Torre Valdez en Udemy. El objetivo de este proyecto es crear una página para una pequeña tienda, con un diseño minimalista y fácil de navegar.
 
 ## Tecnologías Utilizadas
 
